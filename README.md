@@ -6,5 +6,9 @@ Edson Luis Doro - RA 2101805
 
 
 # Tecnologias:
-Python
+Python </br>
 MySQL
+
+# Link do Board Trello:
+https://trello.com/b/LfUJ0OIj/encontro-de-carros-antigos
+
