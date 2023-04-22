@@ -16,15 +16,17 @@
 <h1> Lista de Veiculos: </h1>
 {% for veiculos in data %}
     Código:  {{veiculos.0}} - Placa:  {{veiculos.1}} - Veiculo: {{veiculos.2}} - Responsável:  {{veiculos.3}}</br>
+
     
-<!-- Itens da segunda entrega 
+    
+
     <form action="/delete/veiculo/{{veiculos.0}}" method="POST">
         <button>Deletar</button>
     </form>    
     <form action="/update/veiculo/{{veiculos.0}}" method="GET">
         <button>Atualizar</button>
     </form>
- -->
+ 
         -------------------------------------
     </br>
     {% else %}
