@@ -4,11 +4,11 @@
 {%block content%}
 <h1> Atualização do Veiculo: </h1>
 <form action="/update/veiculo/{{veiculo.0}}" method="POST">
-    <input type="number" name="codigo" value="{{veiculo.0}}" placeholder="Codigo veiculo" readonly>
-    <input type="text" name="placa" value="{{veiculo.1}}" placeholder="Placa do veiculo">
-    <input type="text" name="modelo" value="{{veiculo.2}}" placeholder="Modelo veiculo">
-    <input type="text" name="responsavel" value="{{veiculo.3}}" placeholder="Responsavel veiculo">
-    <input type="number" name="id_encontro" value="{{veiculo.4}}" placeholder="Codigo Encontro">
+    Código: <input type="number" name="codigo" value="{{veiculo.0}}" placeholder="Codigo veiculo" readonly>
+    Placa: <input type="text" name="placa" value="{{veiculo.1}}" placeholder="Placa do veiculo">
+    Modelo: <input type="text" name="modelo" value="{{veiculo.2}}" placeholder="Modelo veiculo">
+    Responsável: <input type="text" name="responsavel" value="{{veiculo.3}}" placeholder="Responsavel veiculo">
+    Encontro: <input type="number" name="id_encontro" value="{{veiculo.4}}" placeholder="Codigo Encontro">
 
 <button type="submit">Atualizar</button>
 </form>

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{%block content%}
+
+<h1> Cadastro do Encontro: </h1>
+<form action="/encontro" method="POST">
+    Código: <input type="number" name="codigo" placeholder="Codigo Encontro">
+    Nome: <input type="text" name="nome" placeholder="Nome Encontro">
+    Descrição: <input type="text" name="descricao" placeholder="Descrição">
+    Data: <input type="date" name="data" placeholder="Data">
+    
+<button type="submit">Cadastrar</button>
+</form>
+</br>
+<a href="/">    <button>Ver Veiculos</button>    </a> 
+
+<h1> Lista de Encontros: </h1>
+{% for encontro in data %}
+Código:  {{encontro.0}} - Nome:  {{encontro.1}} - Descrição: {{encontro.2}} - Data:  {{encontro.3}}</br>
+  
+    
+<!--
+    <form action="/delete/encontro/{{encontro.0}}" method="POST">
+        <button>Deletar</button>
+    </form>    
+    <form action="/update/encontro/{{encontro.0}}" method="GET">
+        <button>Atualizar</button>
+    </form>
+ -->
+        -------------------------------------
+    </br>
+
+
+    {% else %}
+    Nenhum encontro cadastrado!
+    {% endfor %}
+{%endblock%}

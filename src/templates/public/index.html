@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-
 {%block content%}
 <h1> Cadastro do Veiculo: </h1>
 <form action="/" method="POST">
@@ -8,17 +7,16 @@
     Placa: <input type="text" name="placa" placeholder="Placa do veiculo">
     Modelo: <input type="text" name="modelo" placeholder="Modelo veiculo">
     Responsável: <input type="text" name="responsavel" placeholder="Responsavel veiculo">
-     <input type="number" name="id_encontro" placeholder="Codigo Encontro" value=1 readonly hidden>
+    Encontro: <input type="number" name="id_encontro" placeholder="Codigo Encontro">
 
 <button type="submit">Cadastrar</button>
 </form>
+</br>
+<a href="/encontro">    <button>Ver Encontros</button>    </a> 
 
 <h1> Lista de Veiculos: </h1>
 {% for veiculos in data %}
-    Código:  {{veiculos.0}} - Placa:  {{veiculos.1}} - Veiculo: {{veiculos.2}} - Responsável:  {{veiculos.3}}</br>
-
-    
-    
+    Código:  {{veiculos.0}} - Placa:  {{veiculos.1}} - Veiculo: {{veiculos.2}} - Responsável:  {{veiculos.3}}- Encontro:  {{veiculos.4}} - {{veiculos.6}}</br>
 
     <form action="/delete/veiculo/{{veiculos.0}}" method="POST">
         <button>Deletar</button>
