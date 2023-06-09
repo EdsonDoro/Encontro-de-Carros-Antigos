@@ -68,3 +68,10 @@ class EncontroController(MethodView):
             cur.execute("insert into encontro values(%s,%s,%s,%s)",(codigo,nome,descricao,data))
             cur.connection.commit()
             return redirect('/encontro')
+
+class DeleteEncontroController(MethodView):
+    def post(self, codigo):
+        with mysql.cursor()as cur:
+            cur.execute("delete from encontro where id_encontro = (%s)",(codigo,))
+            cur.connection.commit()
+            return redirect('/encontro')
