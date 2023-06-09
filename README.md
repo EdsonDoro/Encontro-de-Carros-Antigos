@@ -36,5 +36,5 @@ https://trello.com/b/LfUJ0OIj/encontro-de-carros-antigos
 
 # Diagrama de Casos de Uso:
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+<img src="https://github.com/EdsonDoro/Encontro-de-Carros-Antigos/blob/main/diagrama_casos_de_uso.JPG"/>
 </p>
