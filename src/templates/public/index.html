@@ -16,7 +16,7 @@
 
 <h1> Lista de Veiculos: </h1>
 {% for veiculos in data %}
-    Código:  {{veiculos.0}} - Placa:  {{veiculos.1}} - Veiculo: {{veiculos.2}} - Responsável:  {{veiculos.3}}- Encontro:  {{veiculos.4}} - {{veiculos.6}}</br>
+    Código:  {{veiculos.0}} - Placa:  {{veiculos.1}} - Veiculo: {{veiculos.2}} - Responsável:  {{veiculos.3}} - Encontro:  {{veiculos.4}} - {{veiculos.6}}</br>
 
     <form action="/delete/veiculo/{{veiculos.0}}" method="POST">
         <button>Deletar</button>

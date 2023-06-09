@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{%block content%}
+<h1> Atualização do Encontro: </h1>
+<form action="/update/encontro/{{encontro.0}}" method="POST">
+    Código: <input type="number" name="id_encontro" value="{{encontro.0}}" placeholder="Codigo Encontro" readonly>
+    Nome: <input type="text" name="nome" value="{{encontro.1}}" placeholder="Nome Encontro">
+    Descrição: <input type="text" name="descricao" value="{{encontro.2}}" placeholder="Descrição">
+    Data: <input type="date" name="data" value="{{encontro.3}}" placeholder="Data">
+
+<button type="submit">Atualizar</button>
+</form>
+
+{% endblock %}

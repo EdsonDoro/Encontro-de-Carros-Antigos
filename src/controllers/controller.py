@@ -75,3 +75,21 @@ class DeleteEncontroController(MethodView):
             cur.execute("delete from encontro where id_encontro = (%s)",(codigo,))
             cur.connection.commit()
             return redirect('/encontro')
+
+class UpdateEncontroController(MethodView):
+    def get(self, encontro):
+        with mysql.cursor()as cur:
+            cur.execute("select * from encontro where id_encontro = (%s)",(encontro,))
+            encontro = cur.fetchone()
+            return render_template('public/update_encontro.html',encontro=encontro)
+        
+    def post(self, encontro):
+        id_encontro = request.form['id_encontro']
+        nome_encontro = request.form['nome']
+        descricao = request.form['descricao']
+        data_encontro = request.form['data']
+        
+        with mysql.cursor()as cur:
+            cur.execute("update encontro set id_encontro = %s, nome_encontro = %s, descricao = %s, data_encontro = %s where id_encontro = %s",(encontro,nome_encontro,descricao,data_encontro,id_encontro))
+            cur.connection.commit()
+            return redirect('/encontro')
