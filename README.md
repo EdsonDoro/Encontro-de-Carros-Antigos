@@ -38,3 +38,9 @@ https://trello.com/b/LfUJ0OIj/encontro-de-carros-antigos
 <p align="center">
 <img src="https://github.com/EdsonDoro/Encontro-de-Carros-Antigos/blob/main/diagrama_casos_de_uso.JPG"/>
 </p>
+
+
+# Diagrama de Classe:
+<p align="center">
+<img src="https://github.com/EdsonDoro/Encontro-de-Carros-Antigos/blob/main/diagrama_de_classe.JPG"/>
+</p>
